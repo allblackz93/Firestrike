@@ -203,7 +203,4 @@
       </characteristics>
     </profile>
   </sharedProfiles>
-  <publications>
-    <publication name="Github" id="f323-0955-e46a-5647" hidden="false" publisherUrl="https://github.com/allblackz93/Firestrike/blob/1.2/Star%20Wars%20Firestrike.gst"/>
-  </publications>
 </gameSystem>

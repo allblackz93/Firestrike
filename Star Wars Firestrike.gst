@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9817-51a3-5324-fb01" name="Star Wars Firestrike" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-9817-51a3-5324-fb01" name="Star Wars Firestrike" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Sub Faction" id="default-category"/>
     <categoryEntry name="Leader" id="a1b8-6e06-998f-2141" hidden="false"/>
@@ -89,10 +89,18 @@
     </profileType>
   </profileTypes>
   <sharedRules>
-    <rule name="Repulsor" id="de77-f808-1f29-9687" hidden="false"/>
-    <rule name="Commando" id="4169-c762-c674-d153" hidden="false"/>
-    <rule name="All Terrain" id="ceb6-300b-a7da-d000" hidden="false"/>
-    <rule name="Fly" id="5690-9a47-976b-2dcc" hidden="false"/>
+    <rule name="Repulsor" id="de77-f808-1f29-9687" hidden="false">
+      <description>This unit ignores rough terrain and small obstacles when moving and may still shoot in the ranged phase after making a fall back movement</description>
+    </rule>
+    <rule name="Commando" id="4169-c762-c674-d153" hidden="false">
+      <description>This unit may make a Commando move after deployment, before the first turn</description>
+    </rule>
+    <rule name="All Terrain" id="ceb6-300b-a7da-d000" hidden="false">
+      <description>This unit ignores the movement penalty from Rough Terrain</description>
+    </rule>
+    <rule name="Fly" id="5690-9a47-976b-2dcc" hidden="false">
+      <description>This unit ignores vertical distances when moving and may move across other units and terrain</description>
+    </rule>
     <rule name="Force Sensitive" id="65b7-e961-515a-53e5" hidden="false">
       <description>This unit may attempt to resist Force Powers</description>
     </rule>
@@ -108,13 +116,21 @@
     <rule name="Sniper" id="6420-fa7f-f794-85ab" hidden="false">
       <description>If the hit roll for an attack made with a Sniper is an unmodified 7+, inflict Brutal wounds equal to the damage characteristic of the weapon and the attack sequence ends</description>
     </rule>
-    <rule name="Heavy" id="76cb-6aff-f2d1-7068" hidden="false"/>
+    <rule name="Heavy" id="76cb-6aff-f2d1-7068" hidden="false">
+      <description>This weapon suffers a -1 to hit rolls if the user&apos;s unit made a movement in the preceding movement phase</description>
+    </rule>
     <rule name="Light" id="2135-2c3a-6657-8ae4" hidden="false">
       <description>This weapon can be fired in the Ranged Phase even if the model equipped with it makes a Quick Time movement</description>
     </rule>
-    <rule name="Lumbering" id="bb6d-257e-5888-c01d" hidden="false"/>
-    <rule name="Indirect Fire" id="89d6-df3f-b7c2-f03b" hidden="false"/>
-    <rule name="Blast" id="0848-7f84-a91e-53d1" hidden="false"/>
+    <rule name="Lumbering" id="bb6d-257e-5888-c01d" hidden="false">
+      <description>This unit may not make melee attacks and cannot make charge attempts</description>
+    </rule>
+    <rule name="Indirect Fire" id="89d6-df3f-b7c2-f03b" hidden="false">
+      <description>This weapon does not require line of sight to target an enemy unit</description>
+    </rule>
+    <rule name="Blast" id="0848-7f84-a91e-53d1" hidden="false">
+      <description>If a model is destroyed by this weapon, remaining damage from this weapon spills over onto surviving models from the target unit</description>
+    </rule>
     <rule name="Lightsaber Resistant" id="5f90-1f0e-96e4-2d6b" hidden="false">
       <description>This weapon grants a 8+ Parry against Lightsaber weapons</description>
     </rule>
@@ -187,4 +203,7 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <publications>
+    <publication name="Github" id="f323-0955-e46a-5647" hidden="false" publisherUrl="https://github.com/allblackz93/Firestrike/blob/1.2/Star%20Wars%20Firestrike.gst"/>
+  </publications>
 </gameSystem>

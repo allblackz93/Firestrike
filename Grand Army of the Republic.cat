@@ -2489,14 +2489,6 @@
             <infoLink name="Throw" id="4288-167d-1b38-0d12" hidden="false" type="profile" targetId="c51a-664a-8342-67f6"/>
             <infoLink name="Valour" id="834a-3c2c-7b8b-6041" hidden="false" type="profile" targetId="2f01-e5e8-8ab2-9669"/>
           </infoLinks>
-          <profiles>
-            <profile name="Cloak" typeId="ee5e-e6b2-01bc-c88d" typeName="Force Power" hidden="false" id="b0d4-37c1-0076-1d86">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="e88d-ad09-6dcb-557d">4+</characteristic>
-                <characteristic name="Description" typeId="bf7c-1d5e-ef7c-9dd1">(Concentration) While Aayla is concentrating on this power, she cannot be targeted by enemy force powers</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </infoGroup>
       </infoGroups>
       <infoLinks>
@@ -2507,6 +2499,47 @@
       <costs>
         <cost name="Points" typeId="7403-878c-3fa9-fe8a" value="241"/>
       </costs>
+      <profiles>
+        <profile name="Saber" typeId="0652-727d-8b0f-1abd" typeName="Weapon" hidden="false" id="1a0d-474f-92f9-81ae">
+          <characteristics>
+            <characteristic name="Range" typeId="bef5-3674-4006-d171">Melee</characteristic>
+            <characteristic name="RoF" typeId="c129-baf5-ec78-cd70">4</characteristic>
+            <characteristic name="Hit" typeId="87f1-e526-1e0e-8cf8">3+</characteristic>
+            <characteristic name="AP" typeId="d238-9285-6459-aa70">3</characteristic>
+            <characteristic name="Dmg" typeId="74ef-06f9-f52c-ed15">2</characteristic>
+            <characteristic name="Special" typeId="873b-012d-d70f-d234">Lightsaber</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Soresu" typeId="8f65-0038-87eb-0b4c" typeName="Abilities" hidden="false" id="7526-b4df-bdb4-32c9">
+          <characteristics>
+            <characteristic name="Description" typeId="d06a-1836-2c9e-3f77">This model has a 3+ Parry</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Luminara Unduli" typeId="611d-ff8e-c8ae-7a94" typeName="Unit" hidden="false" id="87a2-8d08-7ba2-33bc">
+          <characteristics>
+            <characteristic name="M" typeId="7775-f0be-5f6a-b864">6&quot;</characteristic>
+            <characteristic name="Arm" typeId="0536-eb8d-68ee-2fa8">3+</characteristic>
+            <characteristic name="Ld" typeId="7ab7-5615-d2c8-201d">10</characteristic>
+            <characteristic name="FR" typeId="8b83-656d-f04a-b86a">3 (6)</characteristic>
+            <characteristic name="CR" typeId="41c3-5dbd-6680-7fe6">3</characteristic>
+            <characteristic name="W" typeId="d783-432f-a3da-3acf">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Force Sense" typeId="8f65-0038-87eb-0b4c" typeName="Abilities" hidden="false" id="8015-d538-68b1-3470">
+          <characteristics>
+            <characteristic name="Description" typeId="d06a-1836-2c9e-3f77">Enemy units may not deploy within 12&quot; of this model and if within line of sight, must deploy outside 20&quot;</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Calculated Plan" typeId="02d5-6049-315e-ffaa" typeName="Order" hidden="false" id="dd07-01a4-8f68-2593">
+          <characteristics>
+            <characteristic name="TP" typeId="1dd2-ae82-7f1e-76b7">1</characteristic>
+            <characteristic name="Description" typeId="7f29-52a1-7e58-0a0b">Select one friendly unit within 6&quot;. That unit adds 1 to hit rolls and charge rolls until the end of the turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="12b2-5dc9-bb30-b77c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2626,4 +2659,7 @@
       </rules>
     </forceEntry>
   </forceEntries>
+  <publications>
+    <publication name="Github" id="a850-287c-5fe5-8f8b" hidden="false" publisherUrl="https://github.com/allblackz93/Firestrike/blob/main/Grand%20Army%20of%20the%20Republic.cat"/>
+  </publications>
 </catalogue>

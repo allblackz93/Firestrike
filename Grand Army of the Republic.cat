@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ab06-d0c0-5074-8921" name="Grand Army of the Republic" gameSystemId="sys-9817-51a3-5324-fb01" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ab06-d0c0-5074-8921" name="Grand Army of the Republic" gameSystemId="sys-9817-51a3-5324-fb01" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Phase I Clone Trooper Squad" hidden="false" id="f1b7-81ec-4514-3956">
       <infoLinks>
@@ -1872,6 +1872,27 @@
       <categoryLinks>
         <categoryLink targetId="a1b8-6e06-998f-2141" id="f12f-bc16-0810-27b1" primary="true" name="Leader"/>
       </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Force Powers" id="9753-2956-6ac3-3986" hidden="false">
+          <infoLinks>
+            <infoLink name="Barrier" id="3927-05a7-7224-afc0" hidden="false" type="profile" targetId="54c6-be67-3bca-ac7d"/>
+            <infoLink name="Heal" id="f907-67e8-d1aa-b39d" hidden="false" type="profile" targetId="b5a9-8420-7fa5-7d44"/>
+            <infoLink name="Jump" id="d755-697e-cf27-5e80" hidden="false" type="profile" targetId="6428-ae1e-6c8f-7968"/>
+            <infoLink name="Speed" id="44ab-4bfd-3153-7783" hidden="false" type="profile" targetId="66a5-b152-6ec3-955b"/>
+            <infoLink name="Stasis" id="f9d0-b334-cb4a-69f5" hidden="false" type="profile" targetId="1b0c-8063-c568-2ca5"/>
+            <infoLink name="Throw" id="a190-dab8-6c36-d7e2" hidden="false" type="profile" targetId="c51a-664a-8342-67f6"/>
+            <infoLink name="Valour" id="3ebf-6dfa-7934-1d53" hidden="false" type="profile" targetId="2f01-e5e8-8ab2-9669"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Cloak" typeId="ee5e-e6b2-01bc-c88d" typeName="Force Power" hidden="false" id="fbab-0b79-a392-596a">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="e88d-ad09-6dcb-557d">4+</characteristic>
+                <characteristic name="Description" typeId="bf7c-1d5e-ef7c-9dd1">(Concentration) While Aayla is concentrating on this power, she cannot be targeted by enemy force powers</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="ARC Troopers" hidden="false" id="fb48-b802-1df4-4ec1">
       <categoryLinks>
@@ -2427,7 +2448,7 @@
       <profiles>
         <profile name="Bail Organa" typeId="4188-a790-0f87-dc4e" typeName="Political Character" hidden="false" id="f57e-8767-9af2-0c5a">
           <characteristics>
-            <characteristic name="Ability" typeId="be08-eef8-a0f5-f8b2">If this PC claims the Supply Lines zone, you may select two friendly units to heal or restore D4 wounds (Roll separately) </characteristic>
+            <characteristic name="Ability" typeId="be08-eef8-a0f5-f8b2">If this PC claims the Supply Lines zone, you may select two friendly units to heal or restore D4 wounds (Roll separately)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2452,6 +2473,40 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Luminara Unduli" hidden="false" id="8177-7483-015d-2e74">
+      <categoryLinks>
+        <categoryLink targetId="a1b8-6e06-998f-2141" id="702a-ff5e-1e14-b031" primary="true" name="Leader"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Force Powers" id="d318-9348-4c4f-d91b" hidden="false">
+          <infoLinks>
+            <infoLink name="Barrier" id="b42a-0fff-29aa-3018" hidden="false" type="profile" targetId="54c6-be67-3bca-ac7d"/>
+            <infoLink name="Heal" id="37e2-eefe-f4a3-ed7f" hidden="false" type="profile" targetId="b5a9-8420-7fa5-7d44"/>
+            <infoLink name="Jump" id="ecdc-532b-a8d3-47bc" hidden="false" type="profile" targetId="6428-ae1e-6c8f-7968"/>
+            <infoLink name="Speed" id="fdc0-65d0-5339-ab7d" hidden="false" type="profile" targetId="66a5-b152-6ec3-955b"/>
+            <infoLink name="Stasis" id="0755-95f6-a059-3a6f" hidden="false" type="profile" targetId="1b0c-8063-c568-2ca5"/>
+            <infoLink name="Throw" id="4288-167d-1b38-0d12" hidden="false" type="profile" targetId="c51a-664a-8342-67f6"/>
+            <infoLink name="Valour" id="834a-3c2c-7b8b-6041" hidden="false" type="profile" targetId="2f01-e5e8-8ab2-9669"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Cloak" typeId="ee5e-e6b2-01bc-c88d" typeName="Force Power" hidden="false" id="b0d4-37c1-0076-1d86">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="e88d-ad09-6dcb-557d">4+</characteristic>
+                <characteristic name="Description" typeId="bf7c-1d5e-ef7c-9dd1">(Concentration) While Aayla is concentrating on this power, she cannot be targeted by enemy force powers</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Force User" id="2248-47b6-86b0-8654" hidden="false" type="rule" targetId="f514-8793-f36f-04b7"/>
+        <infoLink name="Lightsaber" id="de57-f546-b9b4-040c" hidden="false" type="rule" targetId="e930-6522-7576-afd1"/>
+        <infoLink name="Officer" id="c1ed-f8a2-0426-a739" hidden="false" type="rule" targetId="c2de-84df-3a91-dbf4"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7403-878c-3fa9-fe8a" value="241"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2547,6 +2602,7 @@
     <entryLink import="true" name="Senator Padme Amidala" hidden="false" id="f48d-9e03-bded-8cca" targetId="6888-c35b-ef31-25ec" type="selectionEntry"/>
     <entryLink import="true" name="Bail Organa" hidden="false" id="86d0-b8d3-4950-4a8d" targetId="0db3-dedc-323b-93d9" type="selectionEntry"/>
     <entryLink import="true" name="Riyo Chuchi (PC)" hidden="false" id="2eba-ed4d-d604-2290" targetId="4337-c1e3-be8f-25e2" type="selectionEntry"/>
+    <entryLink import="true" name="Luminara Unduli" hidden="false" id="994e-c8df-3090-72fd" targetId="8177-7483-015d-2e74" type="selectionEntry"/>
   </entryLinks>
   <sharedRules>
     <rule name="Legion" id="e5ed-10f7-fea9-9f64" hidden="false"/>
